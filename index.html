@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/893d8cd86c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Prints Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- reviews -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+           <img src="images/LOGO.jpg" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">The Little Prints</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                   <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">happy shopping! </h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white "> Etsy ↓ </h1>
+                <a href = "https://www.etsy.com/uk/shop/TheLittlePrints1?ref=nla_listing_details" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">follow me on etsy</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">gifts under £10    </h1>
+                <a href = "https://www.etsy.com/uk/shop/TheLittlePrints1?ref=nla_listing_details" class = "btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">Stoke Inspired</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+<img src = "images/BEST%20SELLER%20NO.1.jpg"
+width="400" height="400"
+     class = "w-100">
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary">
+                            <i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Nikah Mubarak card</p>
+                   
+                            <span class = "fw-bold">£2.00</span>
+<br> <a href ="https://www.etsy.com/uk/listing/891653318/personalised-nikah-mubarak-card?click_key=c35494848005c0fa593d5b6a911e85ad37026063%3A891653318&click_sum=76203d95&ref=shop_home_active_1" width="400" height="400"class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/FEATURED1111111.jpg"width="400" height="400" class = "w-100">
+                            
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fa fa-star-half-o"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Sorry to hear your buzzing off</p>
+                            <span class = "fw-bold">£1.50</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/806490110/sorry-to-hear-your-buzzing-off-good-luck?click_key=80ea121b77fed881d62ef0a535f62baf216c255b%3A806490110&click_sum=a3d98087&ref=shop_home_recs_17" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/stokie1.jpg" width="400" height="400"class = "w-100">
+                            
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fa fa-star-half-o"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Up ‘Anley print</p>
+                            <span class = "fw-bold">£2.00+</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/803160534/up-anley-print?click_key=13ac4decfc9e81328d4a451b1b4cfe1233f261aa%3A803160534&click_sum=2b856a4d&ref=shop_home_active_2" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/stokie2.jpg" width="400" height="400"class = "w-100">
+                            
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fa fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Stoke inspired “Ay up duck” print</p>
+                            <span class = "fw-bold">£2.00+</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/803162492/stoke-inspired-ay-up-duck-print?click_key=aa4c65c33053d9cef6b312d561dc51cb25268978%3A803162492&click_sum=89b6c7f4&ref=shop_home_active_1" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/BEST%20SELLER%20NO.2.jpg"width="400" height="400" width="400" 
+     height="500" class = "w-100">
+
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Arabic Eid Mubarak cards</p>
+                            <span class = "fw-bold">£1.50</span>
+                <br> <a href ="https://www.etsy.com/uk/listing/819474500/arabic-eid-mubarak-cards?click_key=62807be69f1a9f247fc21b2efca151fa7a012c76%3A819474500&click_sum=6d69e655&ref=shop_home_active_2" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/FEATURED2222222.jpg" width="400" height="400"width="400" height="400"class = "w-100">
+                           
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fa fa-star-half-o"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">You’ll always be the rusk cake to my chai- mug</p>
+                            <span class = "fw-bold">£8.00</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/1160199160/youll-always-be-the-rusk-cake-to-my-chai?click_key=19d4f8b39e61aebb689c7aab3196edb8b3af4e41%3A1160199160&click_sum=78bc148b&ref=shop_home_active_1" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/stokie3.jpg"width="400" height="400" class = "w-100">
+                         
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Pottery- Gladstone museum</p>
+                            <span class = "fw-bold">£2.00+</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/817043855/pottery-gladstone-museum?click_key=ec364abbe37392fdd7390d9f5b7c2f005b7ee509%3A817043855&click_sum=96bda09f&ref=shop_home_active_3&sca=1" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/BEST%20SELLER%20NO.3.jpg" width="400" height="400"
+                     width="400" 
+     height="400"            class = "w-100">
+                            
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Personalised Nikah Mubarak card</p>
+                            <span class = "fw-bold">£2.00</span>
+                    <br> <a href ="https://www.etsy.com/uk/listing/891653318/personalised-nikah-mubarak-card?click_key=d5013536359c205c430c4d8406ca42dc9dcbb05b%3A891653318&click_sum=aac994a9&ref=shop_home_active_11" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "images/FEATURED3333.jpg"width="400" height="400" class = "w-100">
+                           
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Black And Gold Premium ‘Eid Mubarak’ Ribbon (15mm In Width)</p>
+                            <span class = "fw-bold">£7.00+</span>
+                            <br> <a href ="https://www.etsy.com/uk/listing/986982182/black-and-gold-premium-eid-mubarak?click_key=97bcce97a3c37b14d89c415dc5f623159735b6ae%3A986982182&click_sum=cc4fe021&ref=shop_home_recs_8" class = "btn btn-primary mt-3">GO!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Eid Card Specials</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/eyyyy.jpg" width="400" height="400"class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        
+                        <span class = "fw-bold d-block">£ 1.40</span>
+                        <a href = "https://www.etsy.com/uk/listing/819476558/simple-eid-mubarak-lantern-card?click_key=8843c7a403c991c592a433c1a17144a1f8c98156%3A819476558&click_sum=de31a7e2&ref=shop_home_recs_1" width="400" height="400"class = "btn btn-primary mt-3">GO!</a>
+                
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/waaaaa.webp" width="400" height="400"class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        
+                        <span class = "fw-bold d-block">£1.50</span>
+                        <a href = "https://www.etsy.com/uk/listing/819474500/arabic-eid-mubarak-cards?click_key=bdf6a49cb7559c3f6409446b50e9290d45a822e7%3A819474500&click_sum=1a9697dc&ref=shop_home_recs_2"class = "btn btn-primary mt-3">GO!</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/yaya.jpg"width="400" height="400" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                      
+                        <span class = "fw-bold d-block">£0.90</span>
+                        <a href = "https://www.etsy.com/uk/listing/809144369/eid-mubarak-card?click_key=0bffb787465c2d8d963c00de5d18cb56d387c02f%3A809144369&click_sum=45279b3f&ref=shop_home_recs_4" width="400" height="400"class = "btn btn-primary mt-3">GO!</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+<br><br><br>
+    
+    <!-- blogs -->
+<section id = "offers" class = "py-5">
+     <div class = "container">
+         <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+              <div class = "offers-content">
+                  <span class = "text-white">Follow me on Etsy</span>
+                    <h2 class = "mt-2 mb-4 text-white">Buy Quick before they go!</h2>
+                  <a href = "https://www.etsy.com/uk/shop/TheLittlePrints1?ref=nla_listing_details" class = "btn">Buy Now</a>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+    
+    
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">Find out all about The Little Prints NOW!</p>
+                    <p>The little prints is a small business that I created off the back of a hobbie. I started off by making Instagram posts that I had designed. I then saw a market it printing and selling these prints. I eventually started to creat, cards, cups, ribbons, and general prints. I also offer a personalised services for primate and cards. My aim was the to cater for all in one place. Therefore I started this website to make it easily accessible to all</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src="images/LOGO.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+    
+    <!-- reviews -->
+    <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Reviews</h2>
+            </div>
+ <div class="page-header" id="movies">
+        <h2 class="text-capitalize">reviews</h2>
+    </div>
+  <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame">
+    <span class="glyphicon glyphicon-film"></span> Page 1<i class="fa fa-sort-desc"></i>
+    </div>
+       
+    
+    
+    <div id="avengers_endgame" class="collapse">
+    
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img src="images/Page%201%20Reviews%20The%20little%20prints.png" width="1000" height="600">
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#the_lion_king">
+    <span class="glyphicon glyphicon-film"></span> Page 2<i class="fa fa-sort-desc"></i>
+    </div>
+       
+    
+    
+    <div id="the_lion_king" class="collapse">
+    
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img src="images/Page%202%20Reviews%20The%20little%20prints.png"width="1000" height="600">
+        </div>
+        
+    </div>
+    
+    <div class="bg-primary movie_head" data-toggle="collapse" data-target="#Frozen_2">
+    <span class="glyphicon glyphicon-film"></span>Page 3<i class="fa fa-sort-desc"></i>
+    </div>
+       
+    
+    
+    <div id="Frozen_2" class="collapse">
+    
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img src="images/Page%203%20Reviews%20The%20little%20prints.png" width="1000" height="600">
+        </div>
+        
+        
+    </div>
+    
+
+
+        </div>
+    </section>
+    <!-- end of reviews -->
+    
+<br><br><br>
+    <!-- newsletter -->
+    <section id = "newsletter" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class = "text-center text-muted">Subscribe today for offers, events, sales and much more!
+                <br>Enter your email below right now!</p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">The Little Prints</a>
+                    <p class = "text-white text-muted mt-3">The little prints is a small business that I created off the back of a hobbie. I started off by making Instagram posts that I had designed. I then saw a market it printing and selling these prints. I eventually started to creat, cards, cups, ribbons, and general prints. I also offer a personalised services for primate and cards. My aim was the to cater for all in one place. Therefore I started this website to make it easily accessible to all</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#header" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#collection" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#specials" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Specials
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#about" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+Stoke-on-Trent,Staffordshire, United Kindom
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                        khadija.m123@hotmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fa-brands fa-instagram"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Message on the.little.prints
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            
+                            <li>
+                                <a href = "https://instagram.com/the.little.prints?igshid=YmMyMTA2M2Y=" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.etsy.com/uk/shop/TheLittlePrints1?ref=nla_listing_details" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                   <i class="fa-brands fa-etsy"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                  <i class="fa-fa fa-browser"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
